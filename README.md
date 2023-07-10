@@ -2,9 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## live Server
+<!-- ## live Server
 
-Open [live Server](https://react-quiz-cyan.vercel.app/) to try it in your browser.
+Open [live Server](https://react-quiz-cyan.vercel.app/) to try it in your browser. -->
+
+## How to use
+
+_After Cloning this project you have to open two terminals at the same time_
+
+1. first one for the `npm i` `npm start` to run the react app.
+2. second one for the `npm run server` to run fake api to work(to load the questions).
 
 ## Technologies used :
 

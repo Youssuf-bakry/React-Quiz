@@ -102,7 +102,7 @@ function App() {
   // }, 0);
 
   useEffect(function () {
-    fetch("../data/questions.json")
+    fetch("http://localhost:9000/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataRecieved", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
