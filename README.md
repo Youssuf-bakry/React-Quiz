@@ -2,11 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<!-- ## live Server
+## live Server
 
-Open [here](https://github.com/typicode/json-server) to try it in your browser. -->
+Open [here](https://react-quiz-cyan.vercel.app/) to try it in your browser.
 
-## How to use
+## How to use on your local device
 
 _After Cloning this project you have to open a terminal _
 
@@ -19,8 +19,7 @@ type this `npm i` `npm start` to run the app.
 1. React (useReducer with Context).
 2. json Server (to use the fake api in development).
 3. Online json Server check [here](https://github.com/typicode/json-server)
-4. Lazy loading with modern React feature
-5. Html5 & Css3
+4. Html5 & Css3
 
 ## Why it's nice to have this project :
 
