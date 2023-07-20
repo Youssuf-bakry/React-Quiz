@@ -8,7 +8,7 @@ Open [here](https://react-quiz-cyan.vercel.app/) to try it in your browser.
 
 ## How to use on your local device
 
-_After Cloning this project you have to open a terminal _
+_After Cloning this project you have to open a terminal_
 
 type this `npm i` `npm start` to run the app.
 
