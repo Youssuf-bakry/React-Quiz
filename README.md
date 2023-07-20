@@ -21,6 +21,13 @@ type this `npm i` `npm start` to run the app.
 3. Online json Server check [here](https://github.com/typicode/json-server)
 4. Html5 & Css3
 
+## Features I built :
+
+1. Timer When the quiz start(Or restarts as well).
+2. Preventing Skipping questions.
+3. Providing Highest Score Record to the User.
+4. Nice Modern Progress bar.
+
 ## Why it's nice to have this project :
 
 _Because building application logic is crucial for mastering problem solving and logical thinking_
