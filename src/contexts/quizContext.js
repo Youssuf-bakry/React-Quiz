@@ -98,21 +98,18 @@ const QuizProvider = function ({ children }) {
   //   return a.points + b.points;
   // }, 0);
 
-  useEffect(
-    function () {
-      // fetch("http://localhost:9000/questions")
-      fetch(
-        "https://my-json-server.typicode.com/youssuf-bakry/reactquiz./questions",
-        {
-          headers: { "access-control-allow-origin": "*" },
-        }
-      )
-        .then((res) => res.json())
-        .then((data) => dispatch({ type: "dataRecieved", payload: data }))
-        .catch((err) => dispatch({ type: "dataFailed" }));
-    },
-    [dispatch]
-  );
+  useEffect(function () {
+    // fetch("http://localhost:9000/questions")
+    fetch(
+      "https://my-json-server.typicode.com/youssuf-bakry/reactquiz./questions",
+      {
+        headers: { "access-control-allow-origin": "*" },
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => dispatch({ type: "dataRecieved", payload: data }))
+      .catch(() => dispatch({ type: "dataFailed" }));
+  }, []);
   return (
     <quizContext.Provider
       value={{
