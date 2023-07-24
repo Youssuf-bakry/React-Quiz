@@ -14,7 +14,7 @@ const initialState = {
   points: 0,
   maxSCore: 0,
   secondsRemaining: null,
-  numQuestions: 0,
+  // numQuestions: 0,
 };
 const Secs_Per_Question = 30;
 function reducer(state, action) {
@@ -23,7 +23,7 @@ function reducer(state, action) {
       return {
         ...state,
         questions: action.payload,
-        numQuestions: state.questions.length,
+        // numQuestions: state.questions.length,
         status: "ready",
       };
     case "dataFailed":
@@ -83,10 +83,12 @@ const QuizProvider = function ({ children }) {
       points,
       maxSCore,
       secondsRemaining,
-      numQuestions,
+      // numQuestions,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+  const numQuestions = questions.length;
+
   const maxPoints = questions
     .map((q) => q.points)
     .reduce((a, b) => {
