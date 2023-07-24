@@ -13,7 +13,6 @@ import { useQuiz } from "./contexts/quizContext";
 
 function App() {
   const { status, dispatch } = useQuiz();
-  // const numQuestions = questions.length;
 
   return (
     <div className="app">
