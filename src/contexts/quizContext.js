@@ -101,11 +101,12 @@ const QuizProvider = function ({ children }) {
   useEffect(function () {
     // fetch("http://localhost:9000/questions")
     fetch(
-      "https://my-json-server.typicode.com/youssuf-bakry/reactquiz./questions",
-      {
-        headers: { "access-control-allow-origin": "*" },
-      }
+      "https://my-json-server.typicode.com/youssuf-bakry/reactquiz./questions"
     )
+      // {
+      //   headers: { "access-control-allow-origin": "*" },
+      // }
+
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataRecieved", payload: data }))
       .catch(() => dispatch({ type: "dataFailed" }));
